@@ -8,6 +8,7 @@ El proyecto tiene como objetivo facilitar el uso de `go` evitando los problemas 
 
 **Herramientas**
 
+* [Ubuntu 14.04.3 LTS](http://releases.ubuntu.com/14.04/)
 * [Golang 1.5.1](https://golang.org/dl/)
 * [Vagrant](https://www.vagrantup.com/)
 * [Mi configuración personal](https://github.com/ivan-iver/config)
