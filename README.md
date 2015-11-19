@@ -1,27 +1,25 @@
-# Vagrant with golang environment
+# Vagrant con go
 
-Simple golang development environment for Vagrant.
+Entorno de desarrollo de go con vagrant.
 
-## Overview
+## Introducción
 
-This project aims to facilitate the use of ``golang`` avoiding Operative System dependence issues, in this way we can focus on our development rather than installation configuration issues. You should be note that it is a project aimed at beginner developer so you do not expect anything advanced.
+El proyecto tiene como objetivo facilitar el uso de `go` evitando los problemas y dependencias comunes de los sitemas operativos, de está forma nos concentramos en el desarrollo en lugar de la instalación y configuración. El proyecto está orientado al uso del entorno por desarrolladores novatos, así que no esperes nada avanzado.
 
-**Tools on the box**
+**Herramientas**
 
 * [Ubuntu 14.04.3 LTS](http://releases.ubuntu.com/14.04/)
 * [Golang 1.5.1](https://golang.org/dl/)
 * [Vagrant](https://www.vagrantup.com/)
-* [My dot files configuration](https://github.com/ivan-iver/config)
+* [Mi configuración personal](https://github.com/ivan-iver/config)
 
-**About tools**
+**Acerca de las herramientas**
 
-> **Go**, also commonly referred to as golang, is a programming language developed at Google in 2007 by [Robert Griesemer](https://en.wikipedia.org/wiki/Robert_Griesemer), [Rob Pike](https://en.wikipedia.org/wiki/Rob_Pike), and [Ken Thompson](https://en.wikipedia.org/wiki/Ken_Thompson). Designed primarily for systems programming, it is a compiled, statically typed language in the tradition of C and C++, with garbage collection, various safety features and [CSP](https://en.wikipedia.org/wiki/Communicating_sequential_processes)-style [concurrent programming](https://en.wikipedia.org/wiki/Concurrent_programming) features added.
+> **Go**, comunmente referido como `golang`, es un lenguaje de programación desarrollado en Google en 2007 por [Robert Griesemer](https://en.wikipedia.org/wiki/Robert_Griesemer), [Rob Pike](https://en.wikipedia.org/wiki/Rob_Pike), y [Ken Thompson](https://en.wikipedia.org/wiki/Ken_Thompson). Diseñado principalmente para la programación de sistemas, es un lenguaje que usa el tipado estático, compilado, con [recolección de basura](https://es.wikipedia.org/wiki/Recolector_de_basura) [(GC)](https://en.wikipedia.org/wiki/Garbage_collection_(computer_science)), diversas características de seguridad y  [programación concurrente](https://en.wikipedia.org/wiki/Concurrent_programming) con estílos [CSP](https://en.wikipedia.org/wiki/Communicating_sequential_processes) como característica añadida.
 
+> **Vagrant** es un software que crea y configura entornos de desarrollo virtuales. Puedes ser visto como un [wrapper](2) sobre software de virtualización como [VirtualBox](3), [VMware](4), [KVM](5), [Contenedores Linux](6) (LXC) y que ayuda a la gestión de la configuración con el uso de [Ansible](7), [Chef](8), [Salt](9), y [Puppet](10).
 
-
-> **Vagrant** is computer software that creates and configures virtual [development environments](1). It can be seen as a higher-level [wrapper](2) around virtualization software such as [VirtualBox](3), [VMware](4), [KVM](5) and [Linux Containers](6) (LXC), and around configuration management software such as [Ansible](7), [Chef](8), [Salt](9), and [Puppet](10).
-
-> Source: [Wikipedia](8)
+> Fuente: [Wikipedia](8)
     
 [1]: https://en.wikipedia.org/wiki/Development_environment_(software_development_process)
 [2]: https://en.wikipedia.org/wiki/Wrapper_library
@@ -35,47 +33,45 @@ This project aims to facilitate the use of ``golang`` avoiding Operative System 
 [10]: https://en.wikipedia.org/wiki/Puppet_(software)
 [11]: https://en.wikipedia.org/wiki/Vagrant_(software)
 
-**Table of Contents**
+**Tabla de contenido**
 
-- [Requirements](#require)
+- [Requerimientos](#require)
 - [Quickstart](#quickstart)
-- [License](#license)
+- [Licencia](#license)
 
 
-## <a name="require">Requirements</a>
+## <a name="require">Requerimientos</a>
 
-1. You must have installed [Vagrant](http://www.vagrantup.com/downloads.html)
-2. And [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
+1. Debes tener instalado [Vagrant](http://www.vagrantup.com/downloads.html)
+2. Y [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 
 ## <a name="quickstart"></a>Quickstart
 
-First at all clone our vagrant repository:
+Primero clonamos el repositorio:
 
 ``` bash
 $ git clone https://github.com/ivan-iver/vagrant_golang.git golang
 ```
 
-After that you can run your vagrant machine:
+Después podemos correr la máquina de vagrant:
 
 ```
 $ cd golang/
 $ vagrant up --provision
 ```
 
-Then the box will be downloaded for you.
-
-If you wish, you can learn more about it alter a [vagrant file](Vagrantfile) and its [configuration options](ConfigOptions).
+Y esperamos, ya que se bajará la maquina virtual y se configurará.
+Si lo deseas puedes modificar el [archivo de vagrant](Vagrantfile) y sus [opciones de configuración](ConfigOptions).
 
 ## <a name="license"></a>Copyright and license
 
 ***
 
-Copyright (c) 2015 Iván Jaimes. See [LICENSE](LICENSE) for details.
+Copyright (c) 2015 Iván Jaimes. Ver [LICENCIA](LICENSE) para más detalles.
 
 ## Feedback
 
-Feedback is more than welcome; I probably got some things wrong so please tell me about it.
-
+La retroalimentación siempre es bienvenida. Si encuentras algo que pueda corregir o mejorar, por favor notificame.
 
 [Vagrant]: http://www.vagrantup.com/
 [Vagrantfile]: https://github.com/ivan-iver/vagrant_golang/blob/master/Vagrantfile
